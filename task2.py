@@ -12,9 +12,9 @@ while True:
     incoming = radio.receive()
     # If should turn on
     if incoming == "a_on":
-        display.show("99999:99999:99999:99999:99999")
+        display.show(Image("99999:99999:99999:99999:99999"))
     elif incoming == "a_off":
-        display.show("00000:00000:00000:00000:00000")
+        display.show(Image("00000:00000:00000:00000:00000"))
 	
     sleep(20)
 
