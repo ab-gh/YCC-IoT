@@ -21,16 +21,7 @@ while True:
         # If should turn on
         if incoming == "a_on":
             display.show(Image("99999:99999:99999:99999:99999"))
+            radio.send("a_on")
         elif incoming == "a_off":
             display.show(Image("00000:00000:00000:00000:00000"))
-            
-    # If should turn on
-    if button_a.was_pressed():
-        radio.send("a_on")
-        display.show(Image("99999:99999:99999:99999:99999"))
-    elif button_b.was_pressed():
-        radio.send("a_off")
-        display.show(Image("00000:00000:00000:00000:00000"))
-	
-    sleep(20)
-
+            radio.send("a_off")
